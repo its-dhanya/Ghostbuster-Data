@@ -1,0 +1,20 @@
+{
+  "_note": "Allowed operations in the mandated order (problem_statement.md): phases FINDING, REMEDIATION, VERIFICATION; within a phase in this order, then system_id, then resource_id.",
+  "operations": [
+    {"op": "REPORT_REMAINING_RECORD",   "phase": "FINDING",      "state": "PRESENT"},
+    {"op": "REPORT_EXPOSED_PII",        "phase": "FINDING",      "state": "PRESENT"},
+    {"op": "REPORT_ACTIVE_DATA_FLOW",   "phase": "FINDING",      "state": "ACTIVE"},
+    {"op": "REPORT_RESTORE_RISK",       "phase": "FINDING",      "state": "ACTIVE"},
+    {"op": "DISABLE_DATA_FLOW",         "phase": "REMEDIATION",  "state": "DISABLED"},
+    {"op": "BLOCK_RESTORE",             "phase": "REMEDIATION",  "state": "BLOCKED"},
+    {"op": "DELETE_RECORD",             "phase": "REMEDIATION",  "state": "ABSENT"},
+    {"op": "REDACT_RECORD",             "phase": "REMEDIATION",  "state": "REDACTED"},
+    {"op": "ANONYMIZE_RECORD",          "phase": "REMEDIATION",  "state": "ANONYMIZED"},
+    {"op": "VERIFY_RECORD_ABSENT",      "phase": "VERIFICATION", "state": "ABSENT"},
+    {"op": "VERIFY_RECORD_PRESENT",     "phase": "VERIFICATION", "state": "PRESENT"},
+    {"op": "VERIFY_RECORD_REDACTED",    "phase": "VERIFICATION", "state": "REDACTED"},
+    {"op": "VERIFY_RECORD_ANONYMIZED",  "phase": "VERIFICATION", "state": "ANONYMIZED"},
+    {"op": "VERIFY_DATA_FLOW_DISABLED", "phase": "VERIFICATION", "state": "DISABLED"},
+    {"op": "VERIFY_RESTORE_BLOCKED",    "phase": "VERIFICATION", "state": "BLOCKED"}
+  ]
+}

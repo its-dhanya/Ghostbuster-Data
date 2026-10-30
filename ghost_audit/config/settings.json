@@ -1,0 +1,15 @@
+{
+  "_note": "Defaults for activity-based resource inference. The windows are re-learned from identifier-linked data at run time (investigation/activity_inference.py: calibrate) when enough support exists.",
+  "identifier_lookback_days": 60,
+  "result_for_reported_status": {"COMPLETE": "SUCCESS", "NOT_STARTED": "FAILED", "PARTIALLY_COMPLETE": "PARTIAL"},
+  "account_window_minutes": [-76, -43],
+  "account_window_wide_minutes": [-130, 10],
+  "clean_window_wide_minutes": [-45, 5],
+  "clean_event_windows_minutes": {
+    "analytics": {"event": "ANONYMIZE_RECORD", "system": "analytics_platform", "window": [-32, -26]},
+    "support":   {"event": "REDACT_RECORD",   "system": "support_platform",   "window": [-24, -14]},
+    "data_flow": {"event": "DISABLE_DATA_FLOW", "system": "integration_service", "window": [-17, -6]},
+    "backup":    {"event": "BLOCK_RESTORE",   "system": "backup_service",     "window": [-10, -2]},
+    "tombstone": {"event": "REDACT_RECORD",   "system": "identity_service",   "window": [-31, -26]}
+  }
+}

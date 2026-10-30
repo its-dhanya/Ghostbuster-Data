@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.DS_Store
+# data and generated artefacts: never commit personal-data inputs or run outputs
+dataset/
+output.csv
+ghost_audit/cache/
+ghost_audit/evaluation/provenance.jsonl
+ghost_audit/evaluation/review_queue.csv
+ghost_audit/evaluation/run_manifest.json

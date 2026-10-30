@@ -1,0 +1,160 @@
+{
+ "_note": "Facts transcribed once from the PNG/PDF evidence (vision/OCR step). Each entry is one resource that is visible in the artifact and the state it shows. Identity links come from data_catalog LINK_RESOURCE_IDENTITY activity, not from here.",
+ "evidence_04": [
+  {
+   "rid": "account_5762",
+   "state": "PRESENT",
+   "note": "customer overview page for user_11",
+   "ids": [
+    "user_11",
+    "haruka.s1838@zoho.com"
+   ]
+  }
+ ],
+ "evidence_09": [
+  {
+   "rid": "search_428",
+   "state": "PRESENT",
+   "note": "search hit user_13",
+   "ids": [
+    "g.silva76@gmail.com",
+    "user_13"
+   ]
+  },
+  {
+   "rid": "search_1874",
+   "state": "PRESENT",
+   "note": "different customer g.silva76.jr",
+   "ids": [
+    "g.silva76.jr@gmail.com"
+   ]
+  }
+ ],
+ "evidence_14": [
+  {
+   "rid": "data_flow_1121",
+   "state": "ACTIVE",
+   "note": "continuous sync, selector jain.aditi",
+   "ids": [
+    "jain.aditi@gmail.com"
+   ]
+  },
+  {
+   "rid": "data_flow_9846",
+   "state": "ACTIVE",
+   "note": "continuous sync, selector lucia-torres",
+   "ids": [
+    "lucia-torres@gmail.com"
+   ]
+  }
+ ],
+ "evidence_18": [
+  {
+   "rid": "export_1842",
+   "state": "PRESENT",
+   "note": "customer statement NST-2026-0718-1842 for user_18",
+   "ids": [
+    "user_18",
+    "ingrid.dahl@outlook.com"
+   ]
+  }
+ ],
+ "evidence_19": [
+  {
+   "rid": "analytics_7438",
+   "state": "EXPOSED",
+   "note": "profile shows name and email",
+   "ids": [
+    "user_20",
+    "darwish.omar@icloud.com"
+   ]
+  }
+ ],
+ "evidence_23": [
+  {
+   "rid": "export_1260",
+   "state": "PRESENT",
+   "note": "export Ready for ingrid.dahl",
+   "ids": [
+    "ingrid.dahl@outlook.com"
+   ]
+  }
+ ],
+ "evidence_28": [
+  {
+   "rid": "support_1034",
+   "state": "EXPOSED",
+   "note": "ticket shows name and email",
+   "ids": [
+    "kagyeman8947@fastmail.com"
+   ]
+  }
+ ],
+ "evidence_32": [
+  {
+   "rid": "backup_9287",
+   "state": "ACTIVE",
+   "note": "archive listed, restorable",
+   "ids": [
+    "areed1433@gmail.com"
+   ]
+  }
+ ],
+ "evidence_37": [
+  {
+   "rid": "audit_record_003",
+   "state": "PRESENT",
+   "note": "account closure event user_03",
+   "ids": [
+    "user_03"
+   ]
+  }
+ ],
+ "evidence_42": [
+  {
+   "rid": "tombstone_17",
+   "state": "CLEAN",
+   "note": "only the customer key user_17, no direct identifiers",
+   "ids": [
+    "user_17"
+   ]
+  }
+ ],
+ "evidence_46": [
+  {
+   "rid": "object_19",
+   "state": "PRESENT",
+   "note": "delivery_confirmation_19.pdf attachment object",
+   "ids": []
+  }
+ ],
+ "evidence_55": [
+  {
+   "rid": "audit_record_003",
+   "state": "PRESENT",
+   "note": "signed compliance journal extract",
+   "ids": [
+    "user_03"
+   ]
+  }
+ ],
+ "evidence_58": [
+  {
+   "rid": "support_001",
+   "state": "PRESENT",
+   "note": "delivery_address_correction.pdf attachment CS-4827",
+   "ids": [
+    "priya.raman@gmail.com",
+    "919876573142"
+   ]
+  }
+ ],
+ "evidence_60": [
+  {
+   "rid": "marketing_001",
+   "state": "PRESENT",
+   "note": "live audience profile",
+   "ids": []
+  }
+ ]
+}
