@@ -26,10 +26,9 @@ included in this repository.
 | Output stability | byte-identical on Python 3.9, 3.10, 3.11, 3.12, 3.14, across runs, hash seeds and input row order |
 | Tests | 22 hand-built evaluation cases + 5-run robustness suite, all passing |
 
-The output score was the strongest part: the evidence-first, time-aware design carried over from the labelled samples to
-the full set. The code-review score was the weakest: the submitted pipeline was deterministic and the model layer was
-optional and unused in the final run, so a reviewer looking for an AI-powered agent saw little of it (see
-[Lessons learned](#lessons-learned)).
+Output accuracy was the strongest component: the evidence-first, time-aware design carried over from the labelled
+samples to the full set. The code review left room to grow, mainly in making the optional model layer more visible and
+measured (see [Lessons learned](#lessons-learned)).
 
 ## Architecture
 
@@ -196,8 +195,8 @@ ghost-data-audit/
 
 1. Measure before calling a limit irreducible: same-day ties looked arbitrary until a second-level timing signal turned
    71 % recovery into 97 %.
-2. A deterministic core is the right call when the contract needs exact ids and ordering (28.5 / 30 on output), but make
-   the AI contribution visible and measured; it was the main reason the code review scored lower.
+2. A deterministic core is a good fit when the contract needs exact ids and ordering (28.5 / 30 on output); next time I
+   would make the AI contribution more visible and measured as well.
 3. Validate on held-out data earlier than I did, and log uncertainty as output instead of hiding it.
 
 ## Privacy

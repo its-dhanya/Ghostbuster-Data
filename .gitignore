@@ -8,3 +8,11 @@ ghost_audit/cache/
 ghost_audit/evaluation/provenance.jsonl
 ghost_audit/evaluation/review_queue.csv
 ghost_audit/evaluation/run_manifest.json
+# session records and personal working files: never commit
+log.txt
+log_edited.txt
+agent-trace/
+agent-trace*.zip
+*.jsonl
+.claude/
+INTERVIEW*.md
